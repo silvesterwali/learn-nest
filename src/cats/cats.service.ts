@@ -1,8 +1,8 @@
 import { Injectable } from '@nestjs/common';
+import { Cats } from '@prisma/client';
+import { PrismaService } from '../prisma.service';
 import { CreateCatDto } from './dto/create-cat.dto';
 import { UpdateCatDto } from './dto/update-cat.dto';
-import { PrismaService } from '../prisma.service';
-import { Cats } from '@prisma/client';
 
 @Injectable()
 export class CatsService {
